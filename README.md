@@ -35,7 +35,7 @@ Account, read the
 on how to create one, and then run (replace the json file name):
 
 ````powershell
-docker run --rm -ti -p 5000:80 --security-opt "credentialspec=file://gsma.json"  lambda3/vs-extensions-gallery
+docker run --rm -ti -p 5000:80 --security-opt "credentialspec=file://gsma.json" -e PGC_VSIX_LOCATION=\\myserver\myshare lambda3/vs-extensions-gallery
 ````
 
 Then navigate to [http://localhost:5000/feed.xml](http://localhost:5000/feed.xml).
