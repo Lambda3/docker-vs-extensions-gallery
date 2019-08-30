@@ -3,8 +3,6 @@ trigger:
     include:
       - master
   paths:
-    include:
-      - agent/*
     exclude:
       - "*/*.md"
       - "*/*.txt"

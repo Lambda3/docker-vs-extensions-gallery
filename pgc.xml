@@ -3,7 +3,7 @@
   <name>PrivateGalleryCreator</name>
   <description>Creates the vs gallery feed.</description>
   <executable>c:\\pgc\\PrivateGalleryCreator.exe</executable>
-  <arguments>-w --name="%gallery_name%" --output=C:\\inetpub\\wwwroot\\feed.xml  --input=c:\\vsix\\</arguments>
+  <arguments>-w --name="%gallery_name%" --output=C:\\inetpub\\wwwroot\\feed.xml --input=%vsix_location%</arguments>
   <logmode>rotate</logmode>
   <startmode>Automatic</startmode>
 </service>

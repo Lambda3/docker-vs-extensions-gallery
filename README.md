@@ -23,10 +23,22 @@ This is based on the
 On Windows, use Docker for Windows and run, on PowerShell:
 
 ````powershell
-docker run --rm -ti -v "c:\path\to\vsixs\:c:\vsix\" -p 5000:80 lambda3/vs-extensions-gallery
+docker run --rm -ti -p 5000:80 -v "c:\path\to\vsixs\:c:\vsix\" lambda3/vs-extensions-gallery
 ````
 
-And navigate to [http://localhost:5000/feed.xml](http://localhost:5000/feed.xml).
+You may want to use a file share where the vsix files are stored, if they are
+not stored on the container host. It is not possible to mount file shares on
+Docker containers, so you will have to to access the share directly from the
+container. For that to work, you most likely will need a Group Managed Service
+Account, read the
+[MS Docs](https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-containers/manage-serviceaccounts)
+on how to create one, and then run (replace the json file name):
+
+````powershell
+docker run --rm -ti -p 5000:80 --security-opt "credentialspec=file://gsma.json"  lambda3/vs-extensions-gallery
+````
+
+Then navigate to [http://localhost:5000/feed.xml](http://localhost:5000/feed.xml).
 
 ## Maintainers
 
