@@ -16,7 +16,7 @@ This is the Windows Docker image for the
 * [`latest` (*Dockerfile*)](https://github.com/lambda3/docker-vs-extensions-gallery/blob/master/Dockerfile)
 
 This is based on the
-[IIS Server image for Windows Server 2019](https://hub.docker.com/_/microsoft-windows-servercore-iis).
+[ASP.NET Image for Windows Nano Server 2019](https://hub.docker.com/_/microsoft-dotnet-aspnet).
 
 ## Running
 
