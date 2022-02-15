@@ -9,7 +9,7 @@ This is the Windows Docker image for the
 [![Downloads from Docker Hub](https://img.shields.io/docker/pulls/lambda3/vs-extensions-gallery.svg)](https://hub.docker.com/r/lambda3/vs-extensions-gallery)
 [![Stars on Docker Hub](https://img.shields.io/docker/stars/lambda3/vs-extensions-gallery.svg)](https://hub.docker.com/r/lambda3/vs-extensions-gallery) [![](https://images.microbadger.com/badges/image/lambda3/vs-extensions-gallery.svg)](https://microbadger.com/images/lambda3/vs-extensions-gallery "Get your own image badge on microbadger.com")
 
-[![Build Status](https://dev.azure.com/lambda3foss/docker-vs-extensions-gallery/_apis/build/status/Lambda3.docker-vs-extensions-gallery?branchName=master)](https://dev.azure.com/lambda3foss/docker-vs-extensions-gallery/_build/latest?definitionId=4&branchName=master)
+[![Build](https://github.com/lambda3/docker-vs-extensions-gallery/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/lambda3/docker-vs-extensions-gallery/actions/workflows/build.yml)
 
 ## Supported tags
 
